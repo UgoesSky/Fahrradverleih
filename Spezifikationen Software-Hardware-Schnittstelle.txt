@@ -1,0 +1,10 @@
+Spezifikationen Software-Hardware-Schnittstelle
+
+Geldeinwurf
+	Signal an PI, wenn Geld eingeworfen
+Login
+	Kundennummer an PI über serielle Schnittstelle
+PIN an PI über serielle Schnittstelle
+	Schlüsselfreigabe
+PI über serielle Schnittstelle
+		Schlüsselnummer
