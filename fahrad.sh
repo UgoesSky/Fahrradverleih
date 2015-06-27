@@ -16,7 +16,8 @@ if [[ $ausw == 1 ]]; then
   #Überprüfung Uhrzeit -> Variable
     	DATEH=$(date +%H)
       DATED=$(date +%u )
-      if [[  $DATEH  == 10 || $DATEH  == 11 || $DATEH  == 12 || $DATEH  == 13 || $DATEH  == 14 || $DATEH  == 15 || $DATEH  == 16 || $DATEH  == 17 || $DATEH  == 18 || $DATEH  == 19 || $DATEH  == 20 || $DATEH  == 21  ]]; then
+    if [[ $DATEH <= 10 | $DATEH >= 21 ]]; then
+
       #TODO Wochentag implementieren und Abfrage
         #AUSLEIHE ok
       else
@@ -31,3 +32,4 @@ elif [[ $ausw == 2 ]]; then
     #HILFE
     echo "Bitte an das Team wenden! Bis bald!" #>Display
 fi
+#if [[  $DATEH  == 10 || $DATEH  == 11 || $DATEH  == 12 || $DATEH  == 13 || $DATEH  == 14 || $DATEH  == 15 || $DATEH  == 16 || $DATEH  == 17 || $DATEH  == 18 || $DATEH  == 19 || $DATEH  == 20 || $DATEH  == 21  ]]; then
