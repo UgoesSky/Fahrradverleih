@@ -6,9 +6,17 @@ void lcd(char* text)
   printf(text);
 }
 
-void mysql(char* text)
+int mysql(char* text)
 {
+  int num=1;
   printf(text);
+  if (num=1) {
+    return 0;
+  }
+  else
+  {
+    return 1;
+  }
 }
 
 int main(int argc, char const *argv[]) {
@@ -20,10 +28,11 @@ int main(int argc, char const *argv[]) {
 
 int login()
 {
+  int mysqla;
   char* pin;
   char* knum;
   //EINGABE Kundennummer
-  knum: // goto-Sprungmarke
+//  knums: // goto-Sprungmarke
   printf("Geben Sie die Kundennummer ein:");
   scanf("%c", &knum);
   printf(/*"%c",*/knum/*,"\n"*/); //Ausgabe Kundennummer
@@ -36,12 +45,16 @@ int login()
   {
   printf("Falsche Kundennummer!\n");
   //warten... (2 sec)
-  goto knum;
+  goto knums;
 }
 */
 //printf("%d",knum); //Ausgabe Kundennummer (Nicht notwendig)
 //Abfrage MySQL
-mysql("MySQL Abfrage Kundennummer");
+mysqla=mysql("MySQL Abfrage Kundennummer, knum");
+if (mysqla=1) {
+  printf("Kundennummer unbekannt\n");
+//  knums:
+}
 //EINGABE PIN
 printf("Geben Sie die PIN ein:");
 scanf("%c", &pin);
