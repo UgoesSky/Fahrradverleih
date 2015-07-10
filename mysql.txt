@@ -7,6 +7,7 @@ Aufbau:
 4   Benutzer gesperrt (0-> Nein; 1-> Ja)
 5   Fahrrad ausgeliehen (0-> Nein; 1-> Ja)
 6   Zahlungsweise (0-> Einmalzahlung; 1 -> 10er-Karte; 2 -> Flatrate)
+7   Verfügbare Fahrten (10er-Karte) (10-0)
 
 Table2: Fahrräder
 Aufbau:
