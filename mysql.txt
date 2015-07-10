@@ -1,0 +1,16 @@
+Database name: fahrrad
+Table1: benutzer
+Aufbau:
+1   Index
+2   Benutzernummer
+3   Name
+4   Benutzer gesperrt (0-> Nein; 1-> Ja)
+5   Fahrrad ausgeliehen (0-> Nein; 1-> Ja)
+6   Zahlungsweise (0-> Einmalzahlung; 1 -> 10er-Karte; 2 -> Flatrate)
+
+Table2: Fahrräder
+Aufbau:
+1   Index
+2   Farbe
+3   letzter Entleiher
+4   Beschädigt?  (0-> Nein; 1-> Ja)
