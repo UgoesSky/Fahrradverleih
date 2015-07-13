@@ -35,7 +35,7 @@ int login()
 //  knums: // goto-Sprungmarke
   printf("Geben Sie die Kundennummer ein:");
   scanf("%c", &knum);
-  printf(/*"%c",*/knum/*,"\n"*/); //Ausgabe Kundennummer
+//    printf(/*"%c",*/knum/*,"\n"*/); //Ausgabe Kundennummer
 /*
   if (knum == "007")
   {
@@ -53,6 +53,7 @@ int login()
 mysqla=mysql("MySQL Abfrage Kundennummer, knum");
 if (mysqla=1) {
   printf("Kundennummer unbekannt\n");
+//  delay(2000);
 //  knums:
 }
 //EINGABE PIN

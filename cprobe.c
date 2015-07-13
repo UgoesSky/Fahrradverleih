@@ -14,6 +14,7 @@ int main(int argc, char const *argv[]) {
   printf("%d und %d\n", zahl1, zahl2);
   printf("Soll die Zahlen addiert werden?\n");
   scanf("%d", &zahl3);
+//delay(2000);
 if (zahl3 < 1) {
   antw = zahl2 + zahl1;
   printf("%d\n", antw);

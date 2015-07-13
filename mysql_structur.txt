@@ -1,0 +1,12 @@
+MySQL-Datenbankstructur
+Tabelle Benutzer
+1 ID
+2 Kundennummer
+3 PIN (MD5-Hashed?)
+4 Vorname
+5 Nachname
+
+Tabelle Räder
+1 ID (gleiche Nummer wie aufm Rad)
+2 Ausgeliehen? (Ja=1)
+3 Ausleiher (Inhalt BNummer oder NULL)
